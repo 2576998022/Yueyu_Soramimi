@@ -1,0 +1,48 @@
+# Format Transcription Request Format
+
+请按以下格式提供需要进行三行式转写的内容：
+
+## Input Requirements
+需要提供第二阶段的完整输出：
+1. 音节对照表
+2. 音节分类
+3. 发音说明
+
+## Expected Output
+将生成标准三行格式：
+
+1. 第一行：原文
+2. 第二行：空耳混合（汉字+拼音）
+3. 第三行：全拼音
+
+## Example Request
+音节对照表：
+我 -> ngo
+倾心 -> king sam (king为入声)
+只 -> zi
+等 -> deng
+你 -> lei (特殊音)
+回来 -> wui loi
+时 -> si
+贴近 -> tip gan (tip为入声)
+
+## Example Response
+我倾心 只等你回来时贴近
+我king心 只deng lei回来时tip近
+ngo king sam zi deng lei wui loi si tip gan
+
+## Format Requirements
+1. 对齐要求
+   - 三行必须垂直对齐
+   - 保持一致的间距
+   - 音节数量需对应
+
+2. 空格规则
+   - 保持原文空格位置
+   - 拼音间需加空格
+   - 确保整体可读性
+
+## Additional Notes
+- 如遇对齐问题请说明
+- 如有特殊字符请提前告知
+- 可以询问任何格式相关问题 

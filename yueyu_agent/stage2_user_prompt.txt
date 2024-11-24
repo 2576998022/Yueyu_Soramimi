@@ -1,0 +1,55 @@
+# Phonetic Conversion Request Format
+
+请按以下格式提供需要转换的分词结果：
+
+## Input Requirements
+需要提供第一阶段的完整输出：
+1. 原文
+2. 分词结果
+3. 分词说明
+
+## Expected Output
+转换结果将包含：
+
+1. 音节对照表：
+   格式：[字/词] -> [粤语拼音] [(特殊标注)]
+
+2. 音节分类：
+   - 普通音节
+   - 入声字
+   - 特殊音
+
+3. 发音说明：
+   - 入声说明
+   - 特殊音说明
+   - 连读提示
+
+## Example Request
+原文：我倾心 只等你回来时贴近
+分词：我/倾心/只/等/你/回来/时/贴近
+
+## Example Response
+音节对照表：
+我 -> ngo
+倾心 -> king sam (king为入声)
+只 -> zi
+等 -> deng
+你 -> lei (特殊音)
+回来 -> wui loi
+时 -> si
+贴近 -> tip gan (tip为入声)
+
+音节分类：
+- 普通音节：我(ngo)、心(sam)、只(zi)、等(deng)、回(wui)、来(loi)、时(si)、近(gan)
+- 入声字：倾(king)、贴(tip)
+- 特殊音：你(lei)
+
+发音说明：
+- 入声说明：king、tip 需短促有力
+- 特殊音说明：lei 为粤语特有读音
+- 连读提示：king-sam、wui-loi、tip-gan 需连贯发音
+
+## Additional Notes
+- 如需特殊处理请说明
+- 如有发音疑问请提出
+- 可以询问任何发音相关问题 

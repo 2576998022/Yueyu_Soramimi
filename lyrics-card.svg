@@ -1,0 +1,30 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景图片 -->
+  <image href="323143.jpg" width="800" height="600" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- 半透明背景遮罩 -->
+  <rect width="800" height="600" fill="rgba(25, 33, 52, 0.45)"/>
+
+  <!-- 歌词内容组 - 居中对齐 -->
+  <g text-anchor="middle">
+    <!-- 中文原文 - 使用书法风格的字体 -->
+    <text x="400" y="250" font-size="36" fill="#ffd700" font-weight="600" 
+          font-family="Ma Shan Zheng, Noto Serif SC, PingFang SC" 
+          filter="drop-shadow(0 2px 4px rgba(0,0,0,0.3))">
+      这风褛我给你磨到有襟花
+    </text>
+    
+    <!-- 粤语注音 - 使用现代简约字体 -->
+    <text x="400" y="320" font-size="28" fill="#a8c7fa" 
+          font-family="LXGW WenKai, Noto Sans SC, PingFang SC"
+          filter="drop-shadow(0 1px 2px rgba(0,0,0,0.2))">
+      者风lau我gay你磨到有gam花
+    </text>
+    
+    <!-- 粤语拼音 - 使用等宽字体 -->
+    <text x="400" y="390" font-size="24" fill="#b8c6ef" 
+          font-family="JetBrains Mono, Source Code Pro, Monaco" letter-spacing="1">
+      ze2 fung1 lau1 ngo5 gei1 nei5 mo4 dou3 jau5 gam1 faa1
+    </text>
+  </g>
+</svg> 
